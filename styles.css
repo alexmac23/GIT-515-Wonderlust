@@ -507,13 +507,3 @@ small {
         grid-row: 5/6;
     }
 }
-
-/*Skip Link CSS*/
-
-.skipContentLink{
-    transform:translateY(-100%);
-}
-
-.skipContentLink:focus-within{
-    transform: translateY(0%);
-}
