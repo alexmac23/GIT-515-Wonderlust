@@ -278,18 +278,18 @@
                     <input>
                 </div>
                 <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span>*</span></legend>
+                <legend>Preferred Contact Method<span aria-hidden="true" class="required">*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input type="radio" id="emailContact" name="contactPref">
+                        <label for="emailContact">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" id="textContact" name="contactPref">
+                        <label for="textContact">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" id="phoneContact" name="contactPref">
+                        <label for="phoneContact">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
