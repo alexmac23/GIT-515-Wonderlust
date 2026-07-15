@@ -271,7 +271,7 @@ label, input, legend, select {
     transform: translateX(-250%);
     transition: transform 0.3s;
 }
-.sr-only:focus-within {
+.sr-only:focus {
     transform: translateX(0%);
 }
 footer {
