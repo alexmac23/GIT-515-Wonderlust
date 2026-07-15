@@ -268,7 +268,7 @@ label, input, legend, select {
     height: 1rem;
     padding: 1.5rem;
     position: absolute;
-    transform: translateX(-250%);
+    transform: translateX(-300%);
     transition: transform 0.3s;
 }
 .sr-only:focus {
