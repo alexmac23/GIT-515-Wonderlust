@@ -57,12 +57,17 @@
                     404px, 920px, 1280px
                     -->
 
-                    <picture>
-                        <source srcset="images/majorca-beach-horizontal-l.jpg" media="(min-width: 1280px)">
-                        <source srcset="images/majorca-beach-vertical-m.jpg" media="(max-width: 920px)">
-                        <source srcset="images/majorca-beach-square-s.jpg" media="(max-width:404px)">
-                        <img src="images/majorca-beach-horizontal-l.jpg" alt="Majorca Beach">
-                    </picture>
+                     <img
+                            alt="Majorca Beach at sunrise"
+
+                            srcset="
+                            images/majorca-beach-horizontal-l.jpg 1280w,
+                            images/majorca-beach-vertical-m.jpg 920w,
+                            images/majorca-beach-square-s.jpg 404w
+                            "
+                            
+                            sizes="90vmin"
+                    >
 
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
                 </div>
@@ -120,12 +125,16 @@
                         images/miranda-blake-L.png 1280w
                     -->
 
-                        <picture>
-                            <source srcset="images/miranda-blake-L" media="(min-width: 1280px)">
-                            <source srcset="images/miranda-blake-S" media="(max-width: 404px)">
-                            <source srcset="images/miranda-blake-M" media="(max-width: 920px)">
-                            <img src="images/miranda-blake-L.png" alt="Image of Miranda Blake"> 
-                        </picture>
+                         <img
+                            srcset="
+                            images/miranda-blake-L.png 1280w,
+                            images/miranda-blake-M.png 920w,
+                            images/miranda-blake-S.png 404w
+                            "
+                            alt="Max Winter"
+                            sizes="100vw"
+                        >
+
                         <div>
                         <h4>Miranda Blake</h4>
                         <dl>
@@ -143,12 +152,15 @@
                         images/max-winter-L.png 1280w
                     -->
 
-                    <picture>
-                        <source srcset="image/max-winter-L.png" media="(min-width: 1280px)">
-                        <source srcset="images/max-winter-M.png" media="(max-width: 920px)">
-                        <source srcset="max-winter-S.png" media="(max-width: 404px)">
-                        <img src="images/max-winter-L.png" alt="Image of Max Winter">
-                    </picture>
+                    <img
+                        srcset="
+                        images/max-winter-L.png 1280w,
+                        images/max-winter-M.png 920w,
+                        images/max-winter-S.png 404w
+                        "
+                        alt="Max Winter"
+                        sizes="100vw"
+                    >
 
                         <div>
                         <h4>Max Winter</h4>
@@ -174,6 +186,16 @@
                         <img src="images/ines-villegoes-L.png" alt="Image of Ines Villegoes">
                     </picture>
 
+                     <img
+                            srcset="
+                            images/ines-villegoes-L.png 1280w,
+                            images/ines-villegoes-M.png 920w,
+                            images/ines-villegoes-S.png 404w
+                            "
+                            alt="Ines Villegoes"
+                            sizes="100vw"
+                        >
+
                     <div>
                         <h4>Inés Villegoes</h4>
                         <dl>
@@ -190,20 +212,14 @@
                         images/carmen-lorenzo-M.png 920w
                         images/carmen-lorenzo-L.png 1280w
                     -->
-                        <picture>
-                            <source srcset="images/carmen-lorenzo-L" media="(min-width: 1280px)">
-                            <source srcset="images/carmen-lorenzo-M" media="(min-width: 920px)">
-                            <source srcset="images/carmen-lorenzo-S" media="(max-width: 404px)">
-                            <img src="images/carmen-lorenzo-L.png" alt="Image of Carmen Lorenzo">
-                        </picture>
 
                         <img
-                            scrset="
+                            srcset="
                             images/carmen-lorenzo-L.png 1280w,
                             images/carmen-lorenzo-M.png 920w,
                             images/carmen-lorenzo-S.png 404w
                             "
-                            alt=""
+                            alt="Carmen Lorenzo"
                             sizes="100vw"
                         >
 
