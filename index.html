@@ -298,52 +298,55 @@
                         <input type="text" id="lastName" name="lastName" autocomplete="family-name" aria-describedby="required" required>
                     </div> <!-- Cant use 'name' in auto complete since the inputs are seperate, MDN says to use given-name and family-name when seperated -->
                     <div>
-                        <label>Email<span aria-hidden="true" id="required">*</span></label>
-                        <input aria-describedby="required" required>
+                        <label for="emailAddress">Email<span aria-hidden="true" id="required">*</span></label>
+                        <input type="email" id="emailAddress" name="emailAddress" autocomplete="email" aria-describedby="required" required>
                     </div>
                     <div>
-                        <label>Phone<span aria-hidden="true" id="required">*</span></label>
-                        <input aria-describedby="required" required>
+                        <label for="phoneNumber">Phone<span aria-hidden="true" id="required">*</span></label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="tel" aria-describedby="required" required>
                     </div>
                     <fieldset id="preferred-contact">
                     <legend>Preferred Contact Method<span aria-hidden="true" id="required">*</span></legend>
                         <div> 
-                            <input type="radio" id="emailContact" name="contactPref" aria-describedby="required" required>
                             <label for="emailContact">Email</label>
+                            <input type="radio" id="emailContact" name="contactPref" aria-describedby="required" required>
+                            
                         </div>
                         <div>
-                            <input type="radio" id="textContact" name="contactPref" aria-describedby="required" required>
                             <label for="textContact">Text</label>
+                            <input type="radio" id="textContact" name="contactPref" aria-describedby="required" required>
+                            
                         </div>
                         <div>
-                            <input type="radio" id="phoneContact" name="contactPref" aria-describedby="required" required>
                             <label for="phoneContact">Phone</label>
+                            <input type="radio" id="phoneContact" name="contactPref" aria-describedby="required" required>
+                            
                         </div>
                     </fieldset>
                     <fieldset id="destination">
                         <legend>Destination<span aria-hidden="true" id="required">*</span></legend>
-                        <select id="select-destination"aria-describedby="required" required>
-                            <option>Choose</option>
-                            <option>Barcelona</option>
-                            <option>Granada</option>
-                            <option>Ibiza</option>
-                            <option>Madrid</option>
-                            <option>Majorca</option>
-                            <option>Seville</option>
-                            <option>Tenerife</option>
-                            <option>Valencia</option>
-                            <option>Other</option>
+                        <select id="select-destination" aria-describedby="required" required>
+                            <option value="" selected disabled>Choose</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Ibiza">Ibiza</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Majorca">Majorca</option>
+                            <option value="Seville">Seville</option>
+                            <option value="Tenerife">Tenerife</option>
+                            <option value="Valencia">Valencia</option>
+                            <option value="Other">Other</option>
                         </select>
                     </fieldset>
                     <fieldset id="travelTime">
                         <legend>Travel Time<span aria-hidden="true" id="required">*</span></legend>
                         <select id="select-travel-time" aria-describedby="required" required>
-                            <option>Choose</option>
-                            <option>Fall</option>
-                            <option>Winter</option>
-                            <option>Spring</option>
-                            <option>Summer</option>
-                            <option>Flexible</option>
+                            <option value="" selected disabled>Choose</option>
+                            <option value="Fall">Fall</option>
+                            <option value="Winter">Winter</option>
+                            <option value="Spring">Spring</option>
+                            <option value="Summer">Summer</option>
+                            <option value="Flexible">Flexible</option>
                         </select>
                     </fieldset>
                     <input id="submit" type="submit" value="Submit">
