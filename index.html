@@ -290,13 +290,13 @@
                 <h3>Contact Us <span id="required">(*required)</span></h3>
                 
                     <div>
-                        <label>First Name<span aria-hidden="true" id="required">*</span></label>
-                        <input aria-describedby="required" required>
+                        <label for="firstName">First Name<span aria-hidden="true" id="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" autocomplete="given-name" aria-describedby="required" required>
                     </div>
                     <div>
-                        <label>Last Name<span aria-hidden="true" id="required">*</span></label>
-                        <input aria-describedby="required" required>
-                    </div>
+                        <label for="lastName">Last Name<span aria-hidden="true" id="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" autocomplete="family-name" aria-describedby="required" required>
+                    </div> <!-- Cant use 'name' in auto complete since the inputs are seperate, MDN says to use given-name and family-name when seperated -->
                     <div>
                         <label>Email<span aria-hidden="true" id="required">*</span></label>
                         <input aria-describedby="required" required>
